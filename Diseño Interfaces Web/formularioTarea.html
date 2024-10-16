@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web</title>
+<style>
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.success {
+    color: green;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    article, form {
+        padding: 10px;
+    }
+}
+
+</style>
+<script>
+    function mostrarMensaje(idCampo, mensaje, tipo) {
+        const mensajeCampo = document.getElementById(idCampo + '-error');
+        if (mensajeCampo) {
+            mensajeCampo.textContent = mensaje;
+            mensajeCampo.style.display = mensaje ? 'block' : 'none';
+            mensajeCampo.className = tipo;
+        }
+    }
+
+    function mostrarMensajeExito(mensaje) {
+            const mensajeExito = document.getElementById('mensaje-exito');
+            if (mensajeExito) {
+                mensajeExito.textContent = mensaje;
+                mensajeExito.style.display = 'block';
+            }
+        }
+
+    function validarFormulario(event) {
+        event.preventDefault();
+
+        const nombre = document.getElementById('nombre').value.trim();
+        const telefono = document.getElementById('telefono').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensaje = document.getElementById('mensaje').value.trim();
+        let formularioValido = true;
+
+        if (nombre === '') {
+            mostrarMensaje('nombre', 'El campo de nombre es obligatorio.', 'error');
+            formularioValido = false;
+        } else {
+            mostrarMensaje('nombre', '', 'success');
+        }
+
+        const telefonoRegex = /^[0-9]{7,}$/;
+        if (!telefonoRegex.test(telefono)) {
+            mostrarMensaje('telefono', 'El número de teléfono debe contener solo números y al menos 7 dígitos.', 'error');
+            formularioValido = false;
+        } else {
+            mostrarMensaje('telefono', '', 'success');
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            mostrarMensaje('email', 'El correo electrónico no es válido.', 'error');
+            formularioValido = false;
+        } else {
+            mostrarMensaje('email', '', 'success');
+        }
+
+        if (mensaje === '') {
+            mostrarMensaje('mensaje', 'El campo de mensaje es obligatorio.', 'error');
+            formularioValido = false;
+        } else {
+            mostrarMensaje('mensaje', '', 'success');
+        }
+
+        if (formularioValido) {
+            alert('¡Formulario enviado con éxito!');
+            mostrarMensajeExito('¡Formulario enviado con éxito!');
+        }
+    }
+
+    window.onload = function() {
+        document.getElementById('formularioContacto').addEventListener('submit', validarFormulario);
+    };
+</script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Proyecto Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre">Sobre Mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="articulos">
+            <h2>Artículos</h2>
+            <article>
+                <h3>Título del Artículo 1</h3>
+                <img src="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/739566/mod_assign/introattachment/0/images/imagen1.jpg" alt="Descripción de la imagen 1">
+                <p>Este es el contenido del primer artículo. Aquí se habla sobre un tema interesante.</p>
+            </article>
+            <article>
+                <h3>Título del Artículo 2</h3>
+                <img src="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/739566/mod_assign/introattachment/0/images/imagen2.jpg" alt="Descripción de la imagen 2">
+                <p>Este es el contenido del segundo artículo. Aquí se habla sobre otro tema interesante.</p>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <div id="nombre-error" class="error"></div>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <div id="telefono-error" class="error"></div>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+                <div id="email-error" class="error"></div>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <div id="mensaje-error" class="error"></div>
+
+                <button type="submit">Enviar</button>
+                <div id="mensaje-exito" class="success" style="display: none;"></div>
+            </form>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Mí</h2>
+            <p>Esta sección es sobre mí. Aquí puedes escribir información sobre ti.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Proyecto Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+

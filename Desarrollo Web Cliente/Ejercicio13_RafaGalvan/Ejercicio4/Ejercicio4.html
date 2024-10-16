@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio13 : Select</title>
+    <script src="Ejercicio4.js" defer></script>
+</head>
+<body>
+    <form>
+        <label>Pregunta 1: ¿Cuál es la capital de Francia?</label>
+        <select id="pregunta1">
+            <option value="0">Londres</option>
+            <option value="1">París</option>
+            <option value="0">Madrid</option>
+        </select>
+        <br>
+        <label>Pregunta 2: ¿Cuánto es 5 + 5?</label>
+        <select id="pregunta2">
+            <option value="1">10</option>
+            <option value="0">15</option>
+            <option value="0">20</option>
+        </select>
+        <br>
+        <label>Pregunta 3: ¿El agua hierve a qué temperatura?</label>
+        <select id="pregunta3">
+            <option value="1">100°C</option>
+            <option value="0">50°C</option>
+            <option value="0">0°C</option>
+        </select>
+        <br>
+        <label>Pregunta 4: ¿Qué planeta es el tercero desde el sol?</label>
+        <select id="pregunta4">
+            <option value="1">Tierra</option>
+            <option value="0">Marte</option>
+            <option value="0">Venus</option>
+        </select>
+        <br>
+        <button type="button" onclick="verificarRespuestas()">Verificar</button>
+    </form>
+    <br>
+    <label>Correctas: </label>
+    <input type="text" id="correctas" readonly>
+    <br>
+    <label>Incorrectas: </label>
+    <input type="text" id="incorrectas" readonly>
+</body>
+</html>
