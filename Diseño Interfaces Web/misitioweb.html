@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .enlaces {
+            background-color: #555555;
+            padding: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #e8e8e8;
+            padding: 20px;
+        }
+        .article1 {
+            margin-bottom: 10px;
+        }
+        .article1 h2 {
+            margin-bottom: 10px;
+        }
+        .article2 {
+            background-color: #e8e8e8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 7px;
+        }
+        .article2 h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0px 15px 0px;
+            width: 100%;
+        }
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }   
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav class="enlaces">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section>
+                <article class="article1">
+                    <h2>Bienvenidos a mi página</h2>
+                    <p>Este es el contenido principal de mi página web. Puedes incluir texto, imágenes, videos, y cualquier tipo de contenido aquí.</p>
+                </article>
+                <article class="article1">
+                    <h2>Últimas Noticias</h2>
+                    <p>En esta sección puedes encontrar los artículos más recientes de nuestro blog.</p>
+                </article>
+                
+                <article class="article2">
+                    <h2>Artículo 1: El impacto del diseño web moderno</h2>
+                    <p>El diseño web ha evolucionado rápidamente en los últimos años, adoptando tendencias minimalistas, colores vibrantes, y tecnologías avanzadas para mejorar la experiencia del usuario.</p>
+                </article>
+
+                <article class="article2">
+                    <h2>Artículo 2: Consejos para mejorar la accesibilidad en sitios web</h2>
+                    <p>La accesibilidad web es clave para garantizar que las personas con discapacidades puedan navegar por tu sitio web sin dificultades. Aquí te mostramos algunos consejos esenciales.</p>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Barra lateral</h3>
+            <p>Aquí puedes incluir enlaces, widgets, o cualquier otro contenido relacionado.</p>
+        </aside>
+    </div>
+
+    <footer>
+        Copyright © 2024 Mi Sitio Web
+    </footer>
+
+</body>
+</html>
