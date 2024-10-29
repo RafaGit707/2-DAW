@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examen Simulacion</title>
+    <meta charset="UTF-8">
+    <script src="../Ejercicio5/Ejercicio5.js"></script>
+</head>
+<body>
+    <input type="checkbox" name="1" value="" onclick="calcularPresupuesto()"/> Quienes somos &nbsp;
+    <input type="checkbox" name="2" value="" onclick="calcularPresupuesto()"/> Donde estamos &nbsp;
+    <input type="checkbox" name="3" value="" onclick="calcularPresupuesto()"/> Galería de fotos &nbsp;
+    <input type="checkbox" name="4" value="" onclick="calcularPresupuesto()"/> e-Commerce &nbsp;<br /><br />
+    <input type="checkbox" name="5" value="" onclick="calcularPresupuesto()"/> Gestión interna &nbsp;
+    <input type="checkbox" name="6" value="" onclick="calcularPresupuesto()"/> Noticias &nbsp;
+    <input type="checkbox" name="7" value="" onclick="calcularPresupuesto()"/> Facebook &nbsp;
+    <input type="checkbox" name="8" value="" onclick="calcularPresupuesto()"/> Twitter &nbsp;<br /><br /><br />
+    
+    SELECCIONA TIPO DE PAGINA:
+    <select name="precio" onchange="calcularPresupuesto()">
+        <option value="" selected></option>
+        <option value="Comercio">Comercio</option>
+        <option value="Restaurantes y bares">Restaurantes y bares</option>
+        <option value="Gestorias">Gestorias</option>
+        <option value="Automovilismo">Automovilismo</option>
+    </select><br><br/>
+    
+    Presupuesto estimado:<br/>
+    <input type="text" name="total" id="precio" value="0" /> &nbsp;€
+</body>
+</html>

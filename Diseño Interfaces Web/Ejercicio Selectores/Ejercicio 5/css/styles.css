@@ -1,0 +1,7 @@
+h3 + p {
+    color: orange;
+}
+
+p ~ ul {
+    background-color: lightblue;
+}

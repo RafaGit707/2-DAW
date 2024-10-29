@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Login</title>
+    </head>
+<body>
+
+    <div id="#mostrar" class="container_login">
+        <div class="fondo"></div>
+        <div class="contenido">
+          <form class="form-container">
+            <h1>Iniciar sesión</h1>
+            <div class="form-group">
+              <label for="username">Nombre de usuario</label>
+              <input type="text" id="username" name="username" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" name="password" autocomplete="off" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?_])(?!\s)[a-zA-Z\d#$@!%&*?_]{8,16}$" required>
+            </div>
+            <button class="submit-btn" type="submit">Iniciar sesión</button>
+            <p class="cuenta_p">¿No tienes cuenta?  <a href="#registro" class="registrarse">Registrarse</a></p>
+          </form>
+        </div>
+    </div>
+
+    <div id="registro" class="container">
+        <div class="fondo"></div>
+        <div class="contenido">
+        <form class="form-container">
+            <h1>Registrarse</h1>
+            <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+            <label for="password2">Contraseña</label>
+            <input type="password" id="password2" name="password2" autocomplete="off" pattern="(?=.*[a-z])(?=.*[a-z])(?=.*\d)(?=.*[#$@!%&*?_])(?!\s)[a-zA-Z\d#$@!%&*?_]{8,16}$" required>
+            </div>
+            <button class="submit-btn" type="submit">Registrarse</button>
+            <p class="cuenta_p">¿Tienes cuenta? <a href="#mostrar" class="registrarse">Iniciar Sesion</a></p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

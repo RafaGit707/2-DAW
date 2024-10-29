@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header p {
+    padding: 10px 0;
+}
+
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-transferencia {
+    display: flex;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+h1, h2 {
+    padding: 10px 0 10px 0;
+}
+
+.mensaje{
+    color: blue;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-volver {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 16px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-style: solid 1px black;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-enviar {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background: #eaeaea;
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+ul li p {
+    margin-top: 10px;
+}

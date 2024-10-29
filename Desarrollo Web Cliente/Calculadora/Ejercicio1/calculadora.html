@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculadora.js"  defer></script>
+</head>
+<body>
+    <div  class="principal">
+        <input type="text" id="pantalla" readonly>
+        <div class="bloque">
+            <div class="columnas">
+                <button id="C" onclick="borrarTodo()">C</button>
+                <button onclick="agregarNumero(7)">7</button>
+                <button onclick="agregarNumero(4)">4</button>
+                <button onclick="agregarNumero(1)">1</button>
+            </div>
+            <div class="columnas">
+                <button onclick="borrar()">←</button>
+                <button onclick="agregarNumero(8)">8</button>
+                <button onclick="agregarNumero(5)">5</button>
+                <button onclick="agregarNumero(2)">2</button>
+
+            </div>
+            <div class="columnas">
+                <button onclick="dividir()">÷</button>
+                <button onclick="agregarNumero(9)">9</button>
+                <button onclick="agregarNumero(6)">6</button>
+                <button onclick="agregarNumero(3)">3</button>
+            </div>
+            <div class="columnas">
+                <button onclick="sumar()">+</button>
+                <button onclick="restar()">-</button>
+                <button onclick="multiplicar()">×</button>
+                <button onclick="agregarNumero(0)">0</button>
+            </div>
+        </div>
+        <div class="fila">
+            <button id="igual" onclick="igual()">=</button>
+            <button onclick="agregarNumero('.')">.</button>
+        </div>
+    </div>
+</body>
+</html>

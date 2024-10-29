@@ -1,0 +1,15 @@
+.clase1.clase2 {
+    color: red;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a[href$=".pdf"] {
+    color: orange;
+}
+
+a[href*="example"] {
+    text-decoration: underline;
+}
