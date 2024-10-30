@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examen Javascript</title>
+    <meta charset="UTF-8">
+    <script src="../Ejercicio5/Ejercicio5.js"></script>
+<style>
+body {
+    background-color:linen;
+}
+table,th,td {
+    border:1px solid blue;
+    background-color:#E6E6E6;
+    margin:auto;
+    border-collapse:collapse;}
+th,td {
+    padding-left:10px;
+    padding-right:140px
+}
+span,#for2 {
+    margin-left:480px;
+}
+#titulo {
+    margin-left:560px;
+    margin-top:60px;
+    font-size:25px;
+}
+#total {
+    margin-left:600px;
+}
+#imp {
+    margin-left:600px;
+    font-size:20px;
+}
+</style>
+</head>
+<body>
+    <form id="cal">
+        <div>
+        <p id="titulo">Vuelos LowCost </p>
+        </div>
+        <table>
+            <tr> 
+                <th>Origen</th><th>Destino</th> 
+            </tr> 
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot1" value="Barcelona"> Barcelona </td> 
+                <td> <input type="radio" name="destino" id="bot2" value="90"> Berlin (90 €) </td>
+            </tr> 
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot3" value="Barcelona"> Barcelona </td>
+                <td> <input type="radio" name="destino" id="bot4" value="90"> Roma (90 €) </td> 
+            </tr>
+            <tr>
+                <td> <input type="radio" name="origen" id="bot5" value="Barcelona"> Barcelona </td> 
+                <td> <input type="radio" name="destino" id="bot6" value="50"> Londres (50 €) </td> 
+            </tr> 
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot7" value="Malaga"> Malaga </td>
+                <td> <input type="radio" name="destino" id="bot8" value="90"> Berlin (90 €) </td> 
+            </tr>
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot9" value="Malaga"> Malaga </td> 
+                <td> <input type="radio" name="destino" id="bot10" value="90"> Roma (90 €) </td>
+            </tr>
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot11" value="Malaga"> Malaga </td>
+                <td> <input type="radio" name="destino" id="bot12" value="50"> Londres (50 €) </td> 
+            </tr>
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot13" value="Madrid"> Madrid </td>
+                <td> <input type="radio" name="destino" id="bot14" value="50"> Berlín (50 €) </td>
+            </tr>
+                <tr> <td> <input type="radio" name="origen" id="bot15" value="Madrid"> Madrid </td> 
+                <td> <input type="radio" name="destino" id="bot16" value="90"> Roma (90 €) </td> 
+            </tr> 
+            <tr> 
+                <td> <input type="radio" name="origen" id="bot17" value="Madrid"> Madrid </td> 
+                <td> <input type="radio" name="destino" id="bot18" value="90"> Londres (90 €) </td>
+            </tr> 
+        </table>
+        <br><br>
+
+        <span>Número de personas :</span>
+        <select id="select1">
+            <option id="op1" value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+        <span style="margin-left:500px;"><input onclick="calcularPresupuesto()" type="button" id="form3" value="presupuesto"></span>
+        </select>
+
+        <br><br><br><br><br>
+
+        <p id="total">Importe Total<input type="text" id="valor" value=""></p>
+        <p id="imp" style="color:red;margin-left:450px"></p>
+    </form>
+
+</body>
+</html>
