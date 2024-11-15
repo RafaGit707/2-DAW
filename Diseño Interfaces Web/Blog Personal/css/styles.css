@@ -1,0 +1,113 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.biografia {
+    margin: 16px;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.articulos {
+    padding: 2rem;
+}
+
+.articulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.articulos-grid article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.articulos-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contacto {
+    background-color: #f0f4f8;
+    padding: 2rem;
+    text-align: left;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 0.7rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    color: rgb(85, 85, 255);
+}
+
+.articulos-grid article:hover {
+    transform: translateY(-5px);
+    background-color: rgb(160, 160, 160);
+}
+
+article:focus {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+button:hover {
+    background-color: #292929;
+}
+
+.contacto:focus-within {
+    font-size: 1.2rem;
+}

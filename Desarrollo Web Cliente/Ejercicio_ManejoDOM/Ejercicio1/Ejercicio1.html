@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 1 : Calculadora de Reserva de Hotel</title>
+    <meta charset="UTF-8">
+    <script src="../Ejercicio1/Ejercicio1.js"></script>
+</head>
+<body>
+
+    <form id="hotelReserva">
+        <label>Tipo de Habitación:</label>
+        <select id="habitacion">
+            <option value="">Seleccione...</option>
+            <option value="50">Sencilla (50 €/noche)</option>
+            <option value="80">Doble (80 €/noche)</option>
+            <option value="120">Suite (120 €/noche)</option>
+        </select>
+        <br>
+        <label>Número de noches:</label>
+        <input type="number" id="noches" min="1">
+        <br>
+        <label>Número de personas:</label>
+        <input type="number" id="personas" min="1" value="1">
+        <br>
+        <input type="button" value="Calcular Importe" onclick="calcularImporte()">
+        <p>Importe Total: <span id="totalImporte"></span></p>
+    </form>
+
+</body>
+</html>

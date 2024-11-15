@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Selectores CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="title">Bienvenido a Mi Sitio Web</h1>
+        <nav class="main-nav">
+            <ul>
+                <li class="nav-item active"><a href="#home">Inicio</a></li>
+                <li class="nav-item"><a href="#portfolio">Portafolio</a></li>
+                <li class="nav-item selected"><a href="#services">Servicios</a></li>
+                <li class="nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Galería -->
+    <section class="gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="image-grid">
+            <div class="image-item">Imagen 1</div>
+            <div class="image-item highlight">Imagen 2</div>
+            <div class="image-item">Imagen 3</div>
+            <div class="image-item">Imagen 4</div>
+        </div>
+    </section>
+
+    <!-- Sección de Sobre Nosotros -->
+    <section class="about">
+        <h2>Sobre Nosotros</h2>
+        <p class="intro">Primer párrafo de introducción en esta sección.</p>
+        <p class="highlight">Este es un párrafo destacado dentro de la sección.</p>
+    </section>
+
+    <!-- Lista en el sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar-list">
+            <li class="divider">Categorías</li>
+            <li class="list-item">Tecnología</li>
+            <li class="list-item">Salud</li>
+            <li class="selected list-item">Estilo de Vida</li>
+            <li class="list-item">Educación</li>
+            <li class="list-item">Negocios</li>
+        </ul>
+    </aside>
+
+    <!-- Footer con Formulario de Suscripción -->
+    <footer id="footer">
+        <h2>Suscríbete a Nuestro Boletín</h2>
+        <form action="#" method="post">
+            <label for="fullname">Nombre Completo:</label>
+            <input type="text" id="fullname" name="fullname">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="comments">Comentarios:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+            
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Quiero recibir actualizaciones</label>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+
+    </footer>
+</body>
+</html>
