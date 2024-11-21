@@ -1,0 +1,254 @@
+/* CSS General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #bdbdbd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photos {
+    display: block;
+    padding: 20px;
+    justify-content: center;
+}
+
+.photo {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.8em;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #999;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.sidebar li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.photo-grid {
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+h1, h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+#site-footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Selectores */
+
+/* Cambia el color del título principal (<h1>) dentro del header a azul oscuro al pasar el cursor sobre él y añade un borde inferior */
+header h1:hover {
+    color: #00008b;
+    border-bottom: 2px solid #00008b;
+}
+
+/* Cambia el fondo de los elementos de la galería (.photo) a un color gris claro usando un selector de clase, y añade un borde negro cuando se pase el cursor sobre ellos */
+.photo {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.photo:hover {
+    border: 2px solid black;
+}
+
+/* Selecciona el enlace en el menú de navegación (<nav>) que lleva al último elemento #contact y cambia su color a verde cuando está activo */
+.menu-item:last-child a:active {
+    color: green;
+}
+
+/* Usa un selector para cambiar el color de fondo (cambiar a color #e0e0e0) del footer (#site-footer) solo cuando el elemento que lo precede, la barra lateral (.sidebar), se encuentra en hover */
+.sidebar:hover + #site-footer {
+    background-color: #e0e0e0;
+}
+
+/* Cambia el color de fondo del formulario cuando está en hover (cambiar a #ff0000) y añade un borde negro alrededor */
+form:hover {
+    background-color: #ff0000;
+    border: 2px solid black;
+}
+
+/* Selecciona el <input> de tipo email y añade un borde verde y sombra en color verde cuando está enfocado */
+input[type="email"]:focus {
+    border: 2px solid green;
+    box-shadow: 0 0 5px green;
+}
+
+/* Cambia el color del <label> (a color amarillo) que está justo después de un <input> enfocado */
+input:focus + label {
+    color: yellow;
+}
+
+/* Selecciona los enlaces en el menú de navegación y cambia su color a gris cuando están en hover, pero solo si son hijos directos de un <li> con la clase current */
+.menu-item.current > a:hover {
+    color: gray;
+}
+
+/* Selecciona el segundo elemento de la galería (.photo) y aplica un fondo oscuro (#333) y un borde blanco */
+.photo:nth-child(2) {
+    background-color: #333;
+    border: 2px solid white;
+}
+
+/* Cambia el color del texto del primer párrafo en cada <section> a color #e74316 */
+section p:first-of-type {
+    color: #e74316;
+}
+
+/* Cambia el color de los <h2> de la página a gris solo si están dentro de una sección */
+section h2 {
+    color: gray;
+}
+
+/* Selecciona el tercer <input> en el formulario y añade un borde verde de 8 píxeles y un fondo amarillo cuando está en foco */
+form input:nth-of-type(3):focus {
+    border: 8px solid green;
+    background-color: yellow;
+}
+
+/* Cambia el color de fondo (a color #ddd) de los elementos de galería (.photo) cuando están en hover, solo si tienen la clase featured */
+.photo.featured:hover {
+    background-color: #ddd;
+}
+
+/* Cambia el fondo del botón del formulario a verde claro cuando se pase el cursor sobre el botón (<button>) */
+form button:hover {
+    background-color: #90ee90;
+}
+
+/* Cambia el color de todos los enlaces en el menú de navegación a blanco si están en hover y son hijos de un <li> con la clase selected */
+.menu-item.selected > a:hover {
+    color: white;
+}
+
+/* Cambia el padding de todos los <div> que son hijos directos de .photo-grid a 15px */
+.photo-grid > div {
+    padding: 15px;
+}
+
+/* Selecciona los encabezados <h1> y <h2> y cambia su color a negro, pero añade un borde inferior solo a los <h2> */
+h1, h2 {
+    color: black;
+}
+h2 {
+    border-bottom: 1px solid black;
+}
+
+/* Selecciona el segundo <li> dentro del sidebar y cambia su color a rojo solo si sigue a un <li> con la clase divider */
+.sidebar li.divider + li {
+    color: red;
+}
+
+/* Cambia el color de fondo de los <p> que son hermanos de un <h2> a gris claro */
+h2 + p {
+    background-color: #d3d3d3;
+}
+
+/* Cambia el color del texto de todos los <div> que son hermanos de un encabezado <h2> a azul oscuro */
+h2 ~ div {
+    color: #00008b;
+}

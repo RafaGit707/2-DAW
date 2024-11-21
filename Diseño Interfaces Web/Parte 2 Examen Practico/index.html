@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Prueba de Selectores CSS</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 class="header-title">Explora Nuestro Sitio</h1>
+        <nav class="navigation">
+            <ul>
+                <li class="menu-item current"><a href="#home">Inicio</a></li>
+                <li class="menu-item"><a href="#gallery">Galería</a></li>
+                <li class="menu-item selected"><a href="#about">Acerca</a></li>
+                <li class="menu-item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Imágenes -->
+    <section class="photos">
+        <h2>Nuestra Galería</h2>
+        <div class="photo-grid">
+            <div class="photo"><img src="./assets/images/galeria1.jpg" width="250" height="276"><p>Foto 1</p></div>
+            <div class="photo featured"><img src="./assets/images/galeria2.jpg" width="250" height="276"><p>Foto 2</p></div>
+            <div class="photo"><img src="./assets/images/galeria3.jpg" width="250" height="276"><p>Foto 3</p></div>
+            <div class="photo"><img src="./assets/images/galeria4.jpg" width="250" height="276"><p>Foto 4</p></div>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section class="info">
+        <h2>Acerca de Nosotros</h2>
+        <div>Presentación</div>
+        <p class="intro-text">Bienvenidos a nuestra página web.</p>
+        <p class="highlighted">Este es un párrafo destacado de la sección.</p>
+    </section>
+
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+        <ul class="sidebar-menu">
+            <li class="divider">Categorías</li>
+            <li class="item">Ciencia</li>
+            <li class="item">Arte</li>
+            <li class="item selected">Viajes</li>
+            <li class="item">Música</li>
+            <li class="item">Deportes</li>
+        </ul>
+    </aside>
+
+    <!-- Pie de Página y Formulario -->
+    <footer id="site-footer">
+        <h2>Subscríbete a nuestro boletín</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Acepto recibir notificaciones</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>

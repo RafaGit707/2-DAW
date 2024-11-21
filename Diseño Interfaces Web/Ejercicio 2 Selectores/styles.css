@@ -3,3 +3,167 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 1. Cambia el color del título principal (<h1>) en el header a morado cuando se pasa el cursor sobre él, y añade un efecto de sombra. */
+header .title:hover {
+    color: purple;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 2. Cambia el fondo de los elementos de galería (.image-item) a gris claro usando un selector de clase, y añade un borde de 3 píxeles cuando se pasa el cursor sobre ellos. */
+.image-item {
+    background-color: lightgray;
+}
+
+.image-item:hover {
+    border: 3px solid black;
+}
+
+/* 3. Selecciona el enlace en el menú de navegación (<nav>) que contiene el texto "Contacto" y cambia su color a rojo cuando esté en hover o activo. */
+.main-nav a[href="#contact"]:hover,
+.main-nav a[href="#contact"].active {
+    color: red;
+}
+
+/* 4. Utiliza un selector de ID para cambiar el color de fondo en el footer cuando el formulario recibe el foco. */
+#footer:focus-within {
+    background-color: #f0f0f0;
+}
+
+/* 5. Cambia el color de fondo del formulario en el footer al hacer hover sobre él, y añade un borde sombreado. */
+footer form:hover {
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* 6. Selecciona los elementos <input> de tipo email y añade un borde azul de 2 píxeles y un efecto de sombra cuando están en foco. */
+input[type="email"]:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px blue;
+}
+
+/* 7. Cambia el color del <label> que es hermano de un <input> correspondiente que está enfocado. */
+input:focus + label {
+    color: green;
+}
+
+/* 8. Cambia el color del texto de los enlaces en el menú de navegación a verde al hacer hover, pero solo si el enlace es un hijo directo de un <li> que tiene la clase active. */
+.main-nav li.active > a:hover {
+    color: green;
+}
+
+/* 9. Selecciona el segundo elemento de galería (.image-item) y aplica un fondo diferente y un borde. */
+.image-grid .image-item:nth-child(2) {
+    background-color: #ffeb3b;
+    border: 2px solid #000;
+}
+
+/* 10. Cambia el color del texto del primer párrafo en cada <section> a azul oscuro. */
+section p:first-of-type {
+    color: darkblue;
+}
+
+/* 11. Cambia el color del texto de todos los <h2> en la página a gris oscuro solo si su elemento padre es una <section>. */
+section h2 {
+    color: darkgray;
+}
+
+/* 12. Selecciona el tercer <input> en el formulario de suscripción y añade un borde negro de 1 píxel y un fondo amarillo cuando recibe el foco. */
+footer form input:nth-of-type(3):focus {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/* 13. Cambia el color de fondo de los elementos de galería (.image-item) al pasar el cursor sobre ellos solo si tienen la clase highlight. */
+.image-item.highlight:hover {
+    background-color: #ddd;
+}
+
+/* 14. Cambia el fondo de los botones del formulario a azul cuando se hace hover sobre el elemento <button>. */
+button:hover {
+    background-color: blue;
+}
+
+/* 15. Cambia el color de todos los enlaces dentro del menú de navegación a blanco si están activos y son hijos de un <li> con la clase selected. */
+nav .main-nav li.selected > a {
+    color: white;
+}
+
+/* 16. Cambia el padding de todos los <div> que son hijos directos de .image-grid a 20px */
+.image-grid > div {
+    padding: 20px;
+}
+
+/* 17. Selecciona los encabezados <h1>, <h2>, y <h3>, cambia su color a negro y añade un borde inferior solo a los <h2>. */
+h1, h2, h3 {
+    color: black;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+}
+
+/* 18. Selecciona el segundo elemento de lista (<li>) dentro del sidebar y cambia su color a verde solo si sigue a un <li> con la clase divider. */
+.sidebar-list li.divider + li:nth-child(2) {
+    color: green;
+}
+
+/* 19. Cambia el color de fondo de los elementos <p> que son hermanos de un encabezado <h2> a gris claro. */
+h2 + p {
+    background-color: lightgray;
+}
+
+/* 20. Cambia el color del texto de todos los <div> que son hermanos de un encabezado <h2> a morado. */
+h2 + div {
+    color: purple;
+}
+
+/* 21. Selecciona todos los elementos <li> en el sidebar que siguen a un elemento con la clase selected y cambia su color a naranja. */
+.sidebar-list li.selected + li {
+    color: orange;
+}
+
+/* 22. Aplica un borde a todos los <input> que son hermanos de un <textarea> en el formulario de contacto. */
+textarea + input {
+    border: 1px solid black;
+}
+
+/* 23. Cambia el color de fondo de un <p> que precede a un encabezado <h2> a amarillo. */
+p + h2 {
+    background-color: yellow;
+}
+
+/* 24. Cambia el estilo de los elementos <li> que son precedidos por un elemento de clase divider en una lista de navegación. */
+.main-nav li.divider + li {
+    font-style: italic;
+}
+
+/* 25. Cambia el color del texto de todos los encabezados <h2> que son precedidos por un párrafo con la clase highlight. */
+.highlight + h2 {
+    color: red;
+}
+
+/* 26. Selecciona el primer párrafo dentro de cada sección que sigue inmediatamente a un <h2> y cambia su color de texto a azul. */
+section h2 + p:first-of-type {
+    color: blue;
+}
+
+/* 27. Cambia el color de fondo de un botón (<button>) que sigue inmediatamente a un <input> de tipo text. */
+input[type="text"] + button {
+    background-color: lightblue;
+}
+
+/* 28. Aplica un estilo de texto rojo a la etiqueta <label> que sigue inmediatamente a un <input> de tipo tel. */
+input[type="tel"] + label {
+    color: red;
+}
+
+/* 29. Cambia el color de fondo de los botones de enviar (submit) en el formulario de contacto a azul claro al pasar el cursor sobre ellos. */
+button[type="submit"]:hover {
+    background-color: lightblue;
+}
+
+/* 30. Cambia el color de texto de todos los <div> que están precedidos por un párrafo (<h2>). */
+p + div {
+    color: red;
+}
