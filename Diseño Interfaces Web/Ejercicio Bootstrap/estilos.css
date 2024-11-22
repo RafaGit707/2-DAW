@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.col-lg-4,
+.col-12 {
+    border: 1px solid #ced4da;
+}
+
+.text-white {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.bg-secondary {
+    background-color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .col-lg-4 {
+        border: 2px solid #495057;
+    }
+}

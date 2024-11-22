@@ -6,67 +6,53 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fffae6;
-    color: #000;
+    background-color: hwb(54 50% 0%);
+    padding: 10px;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #ffe080;
-    padding: 20px;
-    border: 5px solid #dca400;
-    border-radius: 10px;
-    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: white;
 }
 
 h1 {
-    text-align: center;
-    color: #b35900;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .periodo {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #ffcc00;
-    margin-bottom: 30px;
-    text-align: center;
+    overflow: auto;
+    margin: 10px 10px 20px;
+    border:  hwb(43 20% 0%) 5px solid;
+    border-top: none;
+    background-color: hwb(54 20% 0%);
 }
 
 h2 {
-    background-color: #ffcc00;
-    color: #000;
-    padding: 10px;
-    font-size: 1.3em;
-    text-align: center;
+    margin: 0;
+    background-color: hwb(43 20% 0%);
 }
 
 .evento {
-    display: grid;
-    background-color: #fff;
-    border: 2px solid #ff9900;
-    align-items: center;
+    border: hwb(28 0% 0%) 5px solid;
+    border-top: none;
+    background-color: hwb(49 20% 0%);
+    float: left;
+    width: 40%;
+    margin: 10px 4%;
 }
 
 .fecha {
-    font-weight: bold;
-    background-color: #ff9900;
+    margin: 0;
+    padding-left: 5px;
+    background-color: hwb(28 0% 0%);
     color: white;
-    margin-right: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: 20px;
-    color: #555;
 }
 
 p {
-    padding: 10px;
+    margin: 5px;
+}
+
+footer {
+    margin: 10px 0;
 }
