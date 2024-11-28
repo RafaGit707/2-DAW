@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Ejercicio 4 DOM contar elementos</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Contar elementos y modificar estilos</h1>
+    <h3>Texto con párrafos</h3>
+    <div>
+      <p>Párrafo 1</p>
+      <p>Párrafo 2</p>
+      <p>Párrafo 3</p>
+    </div>
+    <button id="count-p">Contar elementos &lt;p&gt;</button>
+    <div class="result" id="result-p">Número de elementos &lt;p&gt;:</div>
+
+    <input type="text" id="tag-input" placeholder="Etiqueta para contar: Ej: p, div, h1">
+    <button id="count-custom">Contar Elementos</button>
+    <div class="result" id="result-custom">Número de elementos encontrados:</div>
+
+    <input type="color" id="text-color" value="#000000">
+    <label for="text-color">Color de texto</label>
+    <input type="color" id="bg-color" value="#ffffff">
+    <label for="bg-color">Color de fondo</label>
+    <button id="apply-styles">Aplicar estilos</button>
+  </div>
+</body>
+</html>

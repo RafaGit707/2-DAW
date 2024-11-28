@@ -5,9 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const numeroEnlaces = enlaces.length;
   
     const penultimoEnlace = enlaces[enlaces.length - 2] ? enlaces[enlaces.length - 2].href : "No hay suficientes enlaces";
-  
-    const enlacesPrueba = Array.from(enlaces).filter(enlace => enlace.href.match("http://prueba"));
-    const numeroEnlacesPrueba = enlacesPrueba.length;
+    
+    let numeroEnlacesPrueba = 0;
+    for (let i = 0; i < enlaces.length; i++) {
+      if (enlaces[i].href === "http://prueba/") {
+        numeroEnlacesPrueba++;
+      }
+    }
   
     const parrafos = document.getElementsByTagName("p");
     let tercerParrafoEnlaces = 0;
