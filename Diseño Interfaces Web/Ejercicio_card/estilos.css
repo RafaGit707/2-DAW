@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-img-bottom {
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    background-color: rgb(83, 83, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+}
