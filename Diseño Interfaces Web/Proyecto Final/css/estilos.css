@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(0, 59, 74);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.img-coche {
+    width: 100%;
+    height: fit-content;
+}
+
+.img-logo {
+    width: 100%;
+    height: fit-content;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.video-coche {
+    width: 100%;
+    height: fit-content;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(191, 12, 240);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.footer-content, .footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(0, 59, 74);
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
