@@ -71,6 +71,14 @@ nav ul li a:hover {
     color: white;
 }
 
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 .footer-content, .footer-links {
     display: flex;
     justify-content: space-between;
@@ -84,3 +92,4 @@ nav ul li a:hover {
     display: flex;
     gap: 15px;
 }
+
