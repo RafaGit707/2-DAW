@@ -11,12 +11,13 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo-audi.png" alt="Logo Audi"></a>
+            <a href="index.html"><img class="img-logo" src="img/logo-audi.png" alt="Logo Audi"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
+                <li><a class="enlaces" href = #contacto>Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +33,7 @@
                 <div class="overlay">
                     <h1>Descubre la Innovación</h1>
                 </div>
-                <video class="img-coche" autoplay muted loop>
+                <video class="video-coche" autoplay muted loop>
                     <source src="videos/audi-a1.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de vídeo.
                 </video>
@@ -41,7 +42,7 @@
         <section class="intro">
             <p>Bienvenido al sitio oficial de Audi. Explora nuestros últimos modelos y tecnologías avanzadas.</p>
             <form action="#">
-                <label for="email">Suscríbete a nuestro boletín:</label>
+                <label for="email">Suscríbete a nuestro boletín</label>
                 <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
                 <button type="submit">Suscribirse</button>
             </form>
@@ -55,19 +56,8 @@
             </article>
             <!-- Añadir más artículos destacados aquí -->
     </main>
-    <section class="video-gallery">
-        <h1>Vídeos Destacados de Audi</h1>
-        <div class="video-item">
-            <video class="img-coche" autoplay muted loop>
-                <source src="videos/audi-a1.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de vídeo.
-            </video>
-            <h2>El Futuro del Diseño Automotriz</h2>
-        </div>
-        <!-- Más vídeos aquí -->
-    </section>
     
-    <footer>
+    <footer id="contacto">
         <div class="footer-content">
             <div class="logo-footer">
                 <img class="img-logo" src="img/logo-audi1.png" alt="Logo Audi">
