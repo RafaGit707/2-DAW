@@ -24,15 +24,17 @@ button {
     padding: 5px;
 }
 
-table {
-    text-align: left;
-}
-
 td {
     margin-top: 10px;
 }
 
-th {
-    margin: 100px;
+table {
+    margin: 16px 0;
+    border-collapse: collapse;
+    width: 100%;
 }
-
+table, th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
