@@ -64,10 +64,6 @@ ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: rgb(191, 12, 240);
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -81,6 +77,10 @@ header nav ul li a {
    color: black;
    font-size: large;
 }
+
+header nav ul li a:hover {
+    color: #333333;
+ }
 
 
 
@@ -112,8 +112,10 @@ header nav ul li a {
     padding: 10px;
 }
 
+/* INTRO */
+
 .intro {
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -148,12 +150,13 @@ header nav ul li a {
     color: #ffffff;
     font-size: 16px;
     padding: 10px 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .intro form button {
     padding: 14px 20px 14px 20px;
     background: none;
+    font-size: 15px;
     color: black;
     font-weight: 700;
     border: 2px solid black;
@@ -165,9 +168,58 @@ header nav ul li a {
 .footer-content, .footer-links {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     background-color: black;
     color: white;
+    margin-top: 16px;
+}
+
+footer {
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.logo-footer {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.arriba {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+svg {
+    width: 24;
+    height: 24;
+    transform: rotate(180deg);
+}
+
+.arriba a span {
+    margin-right: 10px;
+}
+
+.arriba a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.arriba a:hover {
+    color: #828788;
+}
+
+.tag {
+    border-top: 1px solid #333333;
+    margin-top: 40px;
+}
+
+.tag p {
+    margin-top: 40px;
 }
 
 .footer-content ul {
