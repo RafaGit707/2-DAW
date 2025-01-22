@@ -124,7 +124,7 @@ header nav ul li a:hover {
 
 .intro p {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .intro form {
@@ -132,12 +132,12 @@ header nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .intro form label {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 8px;
     color: black;
@@ -165,9 +165,35 @@ header nav ul li a:hover {
 
 /* FOOTER */
 
-.footer-content, .footer-links {
+.footer-content {
     display: flex;
     justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    background-color: black;
+    align-items: center;
+    color: white;
+    max-width: 65%;
+}
+
+.social-media {
+    align-items: center;
+    list-style: none;
+    max-width: 30%;
+}
+
+.footer-links ul {
+    display: inline-flex;
+    flex-flow: wrap;
+    list-style: none;
     background-color: black;
     color: white;
     margin-top: 16px;
@@ -179,21 +205,15 @@ footer {
     color: white;
 }
 
-.logo-footer {
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .arriba {
     display: flex;
     flex-wrap: wrap;
+    /* align-items: center; */
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 svg {
-    width: 24;
-    height: 24;
     transform: rotate(180deg);
 }
 
@@ -203,14 +223,14 @@ svg {
 
 .arriba a {
     display: inline-flex;
-    justify-content: space-between;
+    height: fit-content;
     align-items: center;
     text-decoration: none;
     color: white;
 }
 
 .arriba a:hover {
-    color: #828788;
+    color: #808080;
 }
 
 .tag {
@@ -220,6 +240,7 @@ svg {
 
 .tag p {
     margin-top: 40px;
+    font-size: small;
 }
 
 .footer-content ul {
@@ -230,6 +251,60 @@ svg {
 
 .social-img {
     width: auto;
-    height: 30px;
+    height: 24px;
+}
+
+/* TECNOLOGÍA */
+.tecnologia {
+    text-align: center;
+}
+
+.tecnologia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tecnologia-content img {
+    width: 100%;
+    height: auto;
+}
+
+.tecnologia-content p {
+    font-size: 18px;
+    color: #333333;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* CURIOSIDADES */
+.curiosidades {
+    text-align: center;
+}
+
+.curiosidades-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.curiosidades-content img {
+    width: 100%;
+    height: auto;
+}
+
+.curiosidades-content ul {
+    list-style: disc;
+    margin-top: 20px;
+    text-align: left;
+    color: #333333;
+    max-width: 80%;
+    font-size: 16px;
+}
+
+.curiosidades-content li {
+    margin-bottom: 10px;
 }
 
