@@ -122,6 +122,18 @@ header nav ul li a:hover {
     font-size: large;
 }
 
+/* .intro {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1.5s, transform 0.5s;
+}
+
+.intro:target {
+    opacity: 1;
+    transform: scale(1);
+} */
+
+
 .intro p {
     color: black;
     font-size: 18px;
@@ -150,7 +162,7 @@ header nav ul li a:hover {
     color: #ffffff;
     font-size: 16px;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .intro form button {
@@ -161,7 +173,129 @@ header nav ul li a:hover {
     font-weight: 700;
     border: 2px solid black;
     width: fit-content;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.intro form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* TECNOLOGÍA */
+
+.tecnologia {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.tecnologia:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.tecnologia:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.tecnologia:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.tecnologia:nth-of-type(4) {
+    animation-delay: 1.4s;
+}
+
+.tecnologia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tecnologia-content h2 {
+    margin: 30px 0 30px 0;
+}
+
+.tecnologia-content img {
+    width: 100%;
+    height: auto;
+}
+
+.tecnologia-content p {
+    font-size: 18px;
+    color: black;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* CURIOSIDADES */
+
+.curiosidades {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.curiosidades:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.curiosidades:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.curiosidades:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.curiosidades:nth-of-type(4) {
+    animation-delay: 1.4s;
+}
+
+.curiosidades-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curiosidades-content h2 {
+    margin: 40px 0 40px 0;
+}
+
+.curiosidades-content ul {
+    list-style: none;
+    padding: 40px;
+    gap: 20px;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.curiosidades-content li {
+    margin-bottom: 20px;
+}
+
 
 /* FOOTER */
 
@@ -254,57 +388,43 @@ svg {
     height: 24px;
 }
 
-/* TECNOLOGÍA */
-.tecnologia {
-    text-align: center;
-}
 
-.tecnologia-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
-.tecnologia-content img {
-    width: 100%;
-    height: auto;
-}
 
-.tecnologia-content p {
-    font-size: 18px;
-    color: #333333;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* CURIOSIDADES */
-.curiosidades {
-    text-align: center;
-}
-
-.curiosidades-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.curiosidades-content img {
-    width: 100%;
-    height: auto;
-}
-
-.curiosidades-content ul {
-    list-style: disc;
-    margin-top: 20px;
+.curiosidades2 {
+    padding: 40px 40px;
+    background-color: #f8f8f8;
     text-align: left;
-    color: #333333;
-    max-width: 80%;
-    font-size: 16px;
 }
 
-.curiosidades-content li {
-    margin-bottom: 10px;
+.curiosidades2 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 40px;
 }
 
+.curiosidad-item {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+    background: #ffffff;
+    box-shadow: 14px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.curiosidad-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.img-curiosidad {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.curiosidad-item p {
+    font-size: 1rem;
+    color: black;
+    margin: 30px 40px 0 30px;
+}
