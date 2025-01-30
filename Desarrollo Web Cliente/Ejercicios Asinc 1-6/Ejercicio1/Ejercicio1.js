@@ -5,3 +5,4 @@ function randomFunction() {
     console.log("Function");
 }
 console.log("Main Block");
+
