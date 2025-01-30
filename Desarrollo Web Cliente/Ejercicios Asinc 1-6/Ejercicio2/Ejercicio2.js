@@ -1,13 +1,12 @@
-let numeros = [];
+setTimeout(function() { console.log("Timeout"); }, 1000);
+function randomFunction() { console.log("Function"); }
+randomFunction();
+console.log("Main Block");
 
-for (let i = 1; i <= 10; i++) {
-    let numero = parseInt(prompt("Ingrese el número " + i + ":"));
-    numeros.push(numero);
-}
+// Salida esperada:
+// Function
+// Main Block
+// Timeout
 
-let sumaUltimos5 = 0;
-for (let i = 5; i < 10; i++) {
-    sumaUltimos5 += numeros[i];
-}
-
-document.write("La suma de los últimos 5 números es: " + sumaUltimos5 + "<br>");
+// randomFunction() es llamada antes de "Main Block", mostrando "Function".
+// El resto sigue el mismo flujo que en el ejercicio anterior, primero "Main Block", y luego "Timeout".

@@ -1,3 +1,12 @@
-for (let i = 1; i <= 10; i++) {
-    document.write("5 x " + i + " = " + (5 * i) + "<br>");
-}
+const first = () => console.log('First');
+const second = () => setTimeout(() => console.log('Second'));
+const third = () => console.log('Third');
+
+// Salida esperada:
+// First
+// Third
+// Second
+
+// first() se ejecuta primero, mostrando "First".
+// third() se ejecuta a continuación, mostrando "Third".
+// second() programa un setTimeout de 0 ms, que se ejecuta después del flujo principal, mostrando "Second".
