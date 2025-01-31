@@ -243,13 +243,13 @@ header nav ul li a:hover {
 }
 
 .tecnologia2 {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .img-tecnologia1, .img-tecnologia2 {
     flex: 1;
     min-height: 500px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
