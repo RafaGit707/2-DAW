@@ -286,17 +286,6 @@ header nav ul li a:hover {
     margin-bottom: 24px;
 }
 
-/* Sección siguiente que se superpone
-.content {
-    height: 100vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: black;
-} */
-
 /* TECNOLOGIA */    
 
 .tecnologia1, .tecnologia2 {
