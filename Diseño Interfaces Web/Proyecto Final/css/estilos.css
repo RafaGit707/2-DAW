@@ -617,39 +617,43 @@ svg {
         flex-direction: column-reverse;
     }
 
-    .img-tecnologia1, .img-tecnologia2 {
+    .img-tecnologia1 {
         width: 100%;
         height: auto;
         min-height: 500px;
+        background-position: center left calc(-300px);
+    }
+
+    .img-tecnologia2 {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        background-position: center right calc(-300px);
     }
 
     .article-tecnologia1, .article-tecnologia2 {
         width: 100%;
-        padding: 80px;
+        padding: 60px;
         text-align: left;
         margin-left: 100px;
         margin-right: 100px;
-        font-size: 1.3em;
-    }
-
-    .tecnologia2 {
-        margin: 0;
+        font-size: 1.2em;
     }
 
     .tecnologia {
         background-size: cover;
-        background-position: center calc(100% + var(--scroll-y) * 1.1px);
+        background-position: center calc(100% + var(--scroll-y) * 0.9px);
     }
     
     .tecnologia22 {
         width: 100%;
         background-size: cover;
         justify-content: center;
-        background-position: center calc(100% + var(--scroll-y) * 0.7px);
+        background-position: center calc(100% + var(--scroll-y) * 0.6px);
     }
     
     .tecnologia-text {
-        padding: 30px 50px 30px 50px;
+        padding: 30px 40px 30px 40px;
         margin: 30px;
         max-width: 400px;
         font-size: 1.1em;
@@ -660,13 +664,9 @@ svg {
 
 /* Para pantallas menores a 768px (móviles) */
 @media (max-width: 768px) {
-    .video-coche {
-        width: 100%; /* Mantiene el ancho completo */
-        max-height: 500px; /* Ajusta la altura máxima */
-    }
 
     .overlay h1 {
-        font-size: 20px; /* Reduce el tamaño del texto */
+        font-size: 20px;
     }
 
     .intro {
@@ -674,6 +674,65 @@ svg {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .texto-slide {
+        font-size: 1.2em;
+    }
+
+    .parallax-text {
+        font-size: 1.1em;
+        padding: 40px;
+        margin: 30px;
+    }
+
+    .article-tecnologia1, .article-tecnologia2 {
+        width: 100%;
+        padding: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 1.1em;
+    }
+
+    .img-tecnologia1 {
+        background-position: center left calc(-200px);
+    }
+    
+    .img-tecnologia2 {
+        background-position: center;
+    }
+
+    .tecnologia {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        flex-direction: column;
+        height: max-content;
+        background-size: cover;
+        background-position: center calc(30% + var(--scroll-y) * 0.8px);
+    }
+    
+    .tecnologia22 {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.9px);
+    }
+
+    .tecnologia > .tecnologia-text {
+        margin: 0;
+        margin-top: 100%;
+    }
+
+    .tecnologia-text {
+        padding: 40px 40px 40px 40px;
+        margin: 40px;
+        max-width: max-content;
+        font-size: 1em;
+    }
+
 }
 
 /* Para pantallas muy pequeñas (menores a 480px) */
@@ -690,6 +749,74 @@ svg {
     .intro form button {
         padding: 10px 15px; /* Reduce el tamaño del botón */
         font-size: 14px;
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .texto-slide {
+        font-size: 1.2em;
+    }
+
+    .parallax-text {
+        font-size: 1.1em;
+        padding: 40px;
+        margin: 30px;
+    }
+
+    .article-tecnologia1, .article-tecnologia2 {
+        width: 100%;
+        padding: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 1.1em;
+    }
+
+    .img-tecnologia1 {
+        background-position: center left calc(-200px);
+    }
+    
+    .img-tecnologia2 {
+        background-position: center;
+    }
+
+    .tecnologia {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        flex-direction: column;
+        height: max-content;
+        background-size: cover;
+        background-position: center calc(30% + var(--scroll-y) * 0.6px);
+    }
+    
+    .tecnologia22 {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.4px);
+    }
+
+    .tecnologia > .tecnologia-text {
+        margin: 0;
+        margin-top: 100%;
+    }
+
+    .tecnologia-text {
+        padding: 40px 40px 40px 40px;
+        margin: 40px;
+        max-width: max-content;
+        font-size: 1em;
     }
 }
 
