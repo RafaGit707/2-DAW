@@ -265,9 +265,9 @@ header nav ul li a:hover {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: center;
-    background-image: url('https://media.audi.com/is/image/audi/nemo/models/q3/rs-q3-sportback/my-2024/parallax-teaser/RSQ3_2020_1490_1-XL.jpg?auto=webp&width=1920');
+    background-image: url("../img/audi-x2.jpg");
     background-size: cover;
-    background-position: center calc(90% + var(--scroll-y) * 0.9px);
+    background-position: center calc(100% + var(--scroll-y) * 0.6px);
 }
 
 .parallax-text {
@@ -307,12 +307,12 @@ header nav ul li a:hover {
 }
 
 .img-tecnologia1 {
-    background-image: url("../img/audi-a3-2.png");
+    background-image: url("../img/audi-rs7-1.jpg");
     background-position: center left;
 }
 
 .img-tecnologia2 {
-    background-image: url("../img/audi-rs5.avif");
+    background-image: url("../img/audi-rs4-interior.jpg");
     background-position: center right;
 }
 
@@ -332,7 +332,7 @@ header nav ul li a:hover {
 }
 
 .tecnologia2 {
-    margin-top: 40px;
+    margin-top: 60px;
     flex-direction: row;
 }
 
@@ -344,6 +344,50 @@ header nav ul li a:hover {
     transform: translateY(50px);
     animation: fadeIn 1s ease-out forwards;
     animation-delay: 4.5s;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("../img/audi-rs7-2.webp");
+    background-size: cover;
+    background-position: center calc(100% + var(--scroll-y) * 1.2px);
+}
+
+.tecnologia22 {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 4.5s;
+
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("../img/audi-rs7-1.jpg");
+    background-size: cover;
+    background-position: center calc(100% + var(--scroll-y) * 0.6px);
+}
+
+.tecnologia-text {
+    position: sticky;
+    top: 30vh;
+    background: white;
+    color: black;
+    padding: 60px 100px 60px 100px;
+    margin: 60px;
+    text-align: left;
+    max-width: 500px;
+    font-size: 1.4rem;
+}
+
+.tecnologia-text h2 {
+    margin-bottom: 24px;
 }
 
 @keyframes fadeIn {
