@@ -318,10 +318,10 @@ header nav ul li a:hover {
 
 .article-tecnologia1, .article-tecnologia2 {
     width: 30%;
-    padding: 60px;
+    padding: 50px;
     text-align: left;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: white;
     color: black;
     font-size: 1.4em;
@@ -353,7 +353,7 @@ header nav ul li a:hover {
     justify-content: flex-start;
     background-image: url("../img/audi-rs7-2.webp");
     background-size: cover;
-    background-position: center calc(100% + var(--scroll-y) * 1.2px);
+    background-position: center calc(100% + var(--scroll-y) * 0.7px);
 }
 
 .tecnologia22 {
@@ -371,7 +371,7 @@ header nav ul li a:hover {
     justify-content: flex-start;
     background-image: url("../img/audi-rs5.webp");
     background-size: cover;
-    background-position: center calc(100% + var(--scroll-y) * 0.6px);
+    background-position: center calc(100% + var(--scroll-y) * 0.9px);
 }
 
 .tecnologia-text {
@@ -379,8 +379,8 @@ header nav ul li a:hover {
     top: 30vh;
     background: white;
     color: black;
-    padding: 60px 100px 60px 100px;
-    margin: 60px;
+    padding: 50px 80px 50px 80px;
+    margin: 50px;
     text-align: left;
     max-width: 500px;
     font-size: 1.4rem;
@@ -453,7 +453,7 @@ header nav ul li a:hover {
     width: 35%;
     background: white;
     color: black;
-    padding: 0 50px 0 50px;
+    padding: 0 40px 0 40px;
     margin: 50px;
     text-align: left;
     max-width: 700px;
@@ -662,7 +662,7 @@ svg {
         width: 100%;
         height: auto;
         min-height: 500px;
-        background-position: center left calc(-300px);
+        background-position: center left calc(-200px);
     }
 
     .img-tecnologia2 {
@@ -683,7 +683,7 @@ svg {
 
     .tecnologia {
         background-size: cover;
-        background-position: center calc(100% + var(--scroll-y) * 0.9px);
+        background-position: center calc(100% + var(--scroll-y) * 0.65px);
     }
     
     .tecnologia22 {
@@ -775,8 +775,9 @@ svg {
     }
 
     .tecnologia > .tecnologia-text {
-        margin: 0;
-        margin-top: 100%;
+        top: 30vh;
+        margin: 40px;
+        margin-bottom: 100%;
     }
 
     .tecnologia-text {
