@@ -8,10 +8,23 @@ body {
     margin: 16px;
 }
 
+div {
+    margin-bottom: 16px;
+}
+
+li {
+    margin-top: 10px;
+    list-style: none;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    margin-top: 10px;
 }
 
 th, td {
@@ -25,9 +38,13 @@ th {
 }
 
 input {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 6px;
     width: 100%;
     box-sizing: border-box;
+}
+
+button {
+    padding: 6px;
 }

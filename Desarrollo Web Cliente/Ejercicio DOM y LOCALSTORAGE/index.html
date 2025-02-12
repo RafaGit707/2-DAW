@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos y Biblioteca</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div>
+        <h2>Gestión de Productos</h2>
+        <input type="text" id="product-name" placeholder="Nombre del producto">
+        <input type="number" id="product-price" placeholder="Precio">
+        <button id="add-product">Agregar Producto</button>
+        <button id="copy-list">Copiar Lista</button>
+    </div>
+
+    <div>
+        <h3>Lista de Productos</h3>
+        <ul id="product-list"></ul>
+    </div>
+
+    <div>
+        <h3>Lista de Productos Copiada</h3>
+        <ul id="copied-list"></ul>
+    </div>
+
+    <div>
+        <h3>Eliminar Producto</h3>
+        <input type="text" id="delete-product" placeholder="Nombre del producto">
+        <button id="delete-btn">Eliminar</button>
+        <h3>Productos Eliminados</h3>
+        <ul id="deleted-list"></ul>
+    </div>
+
+    <div>
+        <h2>Biblioteca Digital</h2>
+        <input type="text" id="isbn" placeholder="ISBN">
+        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="number" id="ano" placeholder="Año de publicación">
+        <button id="register-book">Registrar</button>
+        <button id="show-books">Mostrar Libros</button>
+    </div>
+
+    <table>
+        <h3>Lista de Libros</h3>
+        <thead>
+            <tr>
+                <th>ISBN</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+
+    <div>
+        <h3>Consultar Libro</h3>
+        <input type="text" id="search-isbn" placeholder="ISBN">
+        <button id="search-book">Consultar</button>
+    </div>
+    <div>
+        <h3>Contar Libros por Autor</h3>
+        <input type="text" id="search-autor" placeholder="Autor">
+        <button id="count-books">Contar</button>
+    </div>
+    <div>
+        <h3>Modificar Libro</h3>
+        <input type="text" id="modify-isbn" placeholder="ISBN">
+        <input type="text" id="modify-titulo" placeholder="Nuevo Título">
+        <input type="text" id="modify-autor" placeholder="Nuevo Autor">
+        <input type="number" id="modify-ano" placeholder="Nuevo Año">
+        <button id="modify-book">Modificar</button>
+    </div>
+</body>
+</html>
