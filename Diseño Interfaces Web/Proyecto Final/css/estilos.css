@@ -888,73 +888,90 @@ svg {
     }
 }
 
+/* PAGINA BLOG.HTML */
 
+/* BLOG */
+
+.main-blog {
+    background-color: #f8f8f8;
+}
 
 .blog-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Grid para los artículos */
-.articles-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
     gap: 20px;
+    padding: 40px;
+    margin: auto;
 }
 
 .article {
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.article img {
-    width: 100%;
-    height: auto;
+.highlight {
+    grid-column: span 2;
+    grid-row: span 1;
 }
 
-.article-content {
-    padding: 15px;
-}
-
-.article-content h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.article-content p {
-    font-size: 14px;
-    color: #555;
-}
-
-.article-content a {
+.article a {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff;
+    color: #002fff;
     text-decoration: none;
 }
 
-.article-content a:hover {
-    text-decoration: underline;
+.img-blog {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .articles-grid {
+.img-destacado {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.content {
+    padding: 24px;
+}
+
+.content h2 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.content p {
+    color: #333333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.article a:hover {
+    color: #0099ff;
+}
+
+/* MEDIA QUERY BLOG */
+
+@media (max-width: 1024px) {
+    .blog-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight {
+        grid-column: span 2;
+        grid-row: span 2;
     }
 }
 
-@media (min-width: 1024px) {
-    .articles-grid {
-        grid-template-columns: repeat(3, 1fr);
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 }
