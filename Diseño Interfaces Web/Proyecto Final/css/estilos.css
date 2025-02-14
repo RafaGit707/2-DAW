@@ -1,3 +1,4 @@
+/* PROYECTO REALIZADO POR RAFAEL GALVÁN CALVO */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -286,7 +287,7 @@ header nav ul li a:hover {
     margin-bottom: 24px;
 }
 
-/* TECNOLOGIA */    
+/* TECNOLOGIA 1 */    
 
 .tecnologia1, .tecnologia2 {
     display: flex;
@@ -336,7 +337,7 @@ header nav ul li a:hover {
     flex-direction: row;
 }
 
-/* TECNOLOGÍA */
+/* TECNOLOGÍA 2 */
 
 .tecnologia {
     text-align: center;
