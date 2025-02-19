@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audi - Bienvenido</title>
+    <title>Audi - Concesionario</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logo-audi-3.png">
 </head>
@@ -19,7 +19,6 @@
         </div>
         <nav class="">
             <ul>
-                <li><a href = "concesionario.html">Concesionario</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
                 <li><a class="enlaces" href = #contacto>Contacto</a></li>
@@ -28,27 +27,8 @@
     </header>
 
     <main>
-        <div class="div-tabla">
-            <table class="tabla" id="tabla">
-                <tr>
-                    <th>
-                        Imagen
-                    </th>
-                    <th>
-                        Modelo
-                    </th>
-                    <th>
-                        Motor
-                    </th>
-                    <th>
-                        Potencia
-                    </th>
-                    <th>
-                        Precio
-                    </th>
-                </tr>
-            </table>
-        </div>
+
+        <section class="coches-container" id="coches-container"></section>        
         
     </main>
     
@@ -129,30 +109,24 @@
 
         document.addEventListener("DOMContentLoaded", () => {
 
-            let tabla = document.getElementById('tabla');
+            let container = document.querySelector('#coches-container');
 
             coches.forEach(coche => {
-                let tr = document.createElement('tr');
-                tr.innerHTML=`
-                <td class="td-tabla">
-                    <img class="img-tabla" src="${coche.imagen}">
-                </td>
-                <td class="td-tabla">
-                    ${coche.modelo}
-                </td>
-                <td class="td-tabla">
-                    ${coche.motor}
-                </td>
-                <td class="td-tabla">
-                    ${coche.potencia}
-                </td>
-                <td class="td-tabla">
-                    ${coche.precio}
-                </td>`;
-                tabla.appendChild(tr);
+                let cocheDiv = document.createElement('div');
+                cocheDiv.classList.add('coche-card');
+                cocheDiv.innerHTML = `
+                    <img src="${coche.imagen}" alt="${coche.modelo}">
+                    <div class="coche-info">
+                        <h2>${coche.modelo}</h2>
+                        <p>${coche.motor}</p>
+                        <p>${coche.potencia}</p>
+                        <p>${coche.precio}</p>
+                    </div>`;
+                container.appendChild(cocheDiv);
             });
 
-        })
+
+        });
 
     </script>
 
