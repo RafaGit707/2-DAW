@@ -28,20 +28,27 @@
     </header>
 
     <main>
-        
-        <table id="tabla">
-            <tr>
-                <th>
-                    Modelo
-                </th>
-                <th>
-                    Color
-                </th>
-                <th>
-                    Precio
-                </th>
-            </tr>
-        </table>
+        <div class="div-tabla">
+            <table class="tabla" id="tabla">
+                <tr>
+                    <th>
+                        Imagen
+                    </th>
+                    <th>
+                        Modelo
+                    </th>
+                    <th>
+                        Motor
+                    </th>
+                    <th>
+                        Potencia
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                </tr>
+            </table>
+        </div>
         
     </main>
     
@@ -83,50 +90,66 @@
 
     <script>
         let coches = [
-        {
-            "modelo": "Audi A1",
-            "color": "Blanco",
-            "precio": "28.620,00 EUR"
-        },
-        {
-            "modelo": "Audi A3",
-            "color": "Negro",
-            "precio": "33.290,00 EUR"
-        },
-        {
-            "modelo": "Audi A5",
-            "color": "Rojo",
-            "precio": "51.050,00 EUR"
-        },
-        {
-            "modelo": "Audi A6",
-            "color": "Gris",
-            "precio": "61.860,00 EUR"
-        },
-        {
-            "modelo": "Audi Q5",
-            "color": "Azul",
-            "precio": "55.000,00 EUR"
-        }
+            {
+                "modelo": "Audi A5",
+                "precio": "55,000€",
+                "motor": "2.0 TFSI",
+                "potencia": "204 CV",
+                "imagen": "img/audi-a5.jpg"
+            },
+            {
+                "modelo": "Audi R8 GT V10",
+                "precio": "225,000€",
+                "motor": "V10 atmosférico 5.2 FSI",
+                "potencia": "620 CV",
+                "imagen": "img/audi-r8-gt.jpg"
+            },
+            {
+                "modelo": "Audi Q8",
+                "precio": "85,000€",
+                "motor": "V6 3.0 TFSI",
+                "potencia": "340 CV",
+                "imagen": "img/audi-q8.jpg"
+            },
+            {
+                "modelo": "Audi RS Q3",
+                "precio": "75,000€",
+                "motor": "2.5 TFSI 5 cilindros",
+                "potencia": "400 CV",
+                "imagen": "img/audi-rsq3.webp"
+            },
+            {
+                "modelo": "Audi RS7 Sportback",
+                "precio": "135,000€",
+                "motor": "V8 biturbo 4.0 TFSI",
+                "potencia": "600 CV",
+                "imagen": "img/audi-rs7-sportback.jpg"
+            }
         ];
 
         document.addEventListener("DOMContentLoaded", () => {
 
             let tabla = document.getElementById('tabla');
 
-            let tr = document.createElement('tr');
-
             coches.forEach(coche => {
-                tabla.appendChild(tr);
-                tr.innerHTML=`    <td>
+                let tr = document.createElement('tr');
+                tr.innerHTML=`
+                <td class="td-tabla">
+                    <img class="img-tabla" src="${coche.imagen}">
+                </td>
+                <td class="td-tabla">
                     ${coche.modelo}
                 </td>
-                <td>
-                    ${coche.color}
+                <td class="td-tabla">
+                    ${coche.motor}
                 </td>
-                <td>
+                <td class="td-tabla">
+                    ${coche.potencia}
+                </td>
+                <td class="td-tabla">
                     ${coche.precio}
                 </td>`;
+                tabla.appendChild(tr);
             });
 
         })

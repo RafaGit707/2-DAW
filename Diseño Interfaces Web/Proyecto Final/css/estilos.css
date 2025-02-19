@@ -976,3 +976,47 @@ svg {
         grid-row: span 1;
     }
 }
+
+/* PAGINA CONCESIONARIO.HTML */
+
+/* CONCESIONARIO */
+
+.div-tabla {
+    max-width: 100%;
+    margin: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.tabla {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    overflow: hidden;
+}
+
+.img-tabla {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+th {
+    width: fit-content;
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+td {
+    width: fit-content;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.td-tabla {
+    text-align: center;
+}
