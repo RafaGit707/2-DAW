@@ -69,43 +69,48 @@
     </footer>
 
     <script>
-        let coches = [
-            {
-                "modelo": "Audi A5",
-                "precio": "55,000€",
-                "motor": "2.0 TFSI",
-                "potencia": "204 CV",
-                "imagen": "img/audi-a5.jpg"
-            },
-            {
-                "modelo": "Audi R8 GT V10",
-                "precio": "225,000€",
-                "motor": "V10 atmosférico 5.2 FSI",
-                "potencia": "620 CV",
-                "imagen": "img/audi-r8-gt.jpg"
-            },
-            {
-                "modelo": "Audi Q8",
-                "precio": "85,000€",
-                "motor": "V6 3.0 TFSI",
-                "potencia": "340 CV",
-                "imagen": "img/audi-q8.jpg"
-            },
-            {
-                "modelo": "Audi RS Q3",
-                "precio": "75,000€",
-                "motor": "2.5 TFSI 5 cilindros",
-                "potencia": "400 CV",
-                "imagen": "img/audi-rsq3.webp"
-            },
-            {
-                "modelo": "Audi RS7 Sportback",
-                "precio": "135,000€",
-                "motor": "V8 biturbo 4.0 TFSI",
-                "potencia": "600 CV",
-                "imagen": "img/audi-rs7-sportback.jpg"
-            }
-        ];
+        let coches = JSON.parse(localStorage.getItem('coches')) || [];
+        
+        if (coches.length === 0) {
+        coches = [
+                {
+                    "modelo": "Audi A5",
+                    "precio": "55,000€",
+                    "motor": "2.0 TFSI",
+                    "potencia": "204 CV",
+                    "imagen": "img/audi-a5.jpg"
+                },
+                {
+                    "modelo": "Audi R8 GT V10",
+                    "precio": "225,000€",
+                    "motor": "V10 atmosférico 5.2 FSI",
+                    "potencia": "620 CV",
+                    "imagen": "img/audi-r8-gt.jpg"
+                },
+                {
+                    "modelo": "Audi Q8",
+                    "precio": "85,000€",
+                    "motor": "V6 3.0 TFSI",
+                    "potencia": "340 CV",
+                    "imagen": "img/audi-q8.jpg"
+                },
+                {
+                    "modelo": "Audi RS Q3",
+                    "precio": "75,000€",
+                    "motor": "2.5 TFSI 5 cilindros",
+                    "potencia": "400 CV",
+                    "imagen": "img/audi-rsq3.webp"
+                },
+                {
+                    "modelo": "Audi RS7 Sportback",
+                    "precio": "135,000€",
+                    "motor": "V8 biturbo 4.0 TFSI",
+                    "potencia": "600 CV",
+                    "imagen": "img/audi-rs7-sportback.jpg"
+                }
+            ];
+            localStorage.setItem('coches', JSON.stringify(coches));
+        }
 
         document.addEventListener("DOMContentLoaded", () => {
 
