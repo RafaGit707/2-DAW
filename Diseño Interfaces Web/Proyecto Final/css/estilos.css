@@ -983,9 +983,9 @@ svg {
 
 .coches-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
     gap: 20px;
-    padding: 80px;
+    padding: 60px;
     max-width: 100%;
     background-color: #f3f3f3;
 }
@@ -1029,13 +1029,35 @@ svg {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .coches-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        padding: 40px;
     }
     .coche-card img {
         width: 100%;
         height: auto;
+    }
+    .coche-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .coche-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .coches-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 20px;
+    }
+    .coche-card img {
+        width: 100%;
+        height: auto;
+    }
+    .coche-info h2 {
+        font-size: 1.4rem;
     }
 }
