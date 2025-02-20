@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Tabla Dinámica</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Filtrar Tabla Dinámica</h1>
+    
+    <div>
+        <input type="text" id="filtro-nombre" placeholder="Escribe un nombre para filtrar...">
+        <input type="number" id="filtro-edad" placeholder="Edad mínima" min="0">
+    </div>
+
+    <div>
+        <button id="ordenar-edad">Ordenar por edad (Ascendente)</button>
+    </div>
+
+    <div id="contador">Resultados: 0</div>
+
+    <div id="tabla-container"></div>
+
+    <h2>Añadir Persona</h2>
+    <form id="form-persona">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="number" id="edad" placeholder="Edad" min="0" required>
+        <button type="submit">Añadir</button>
+    </form>
+</body>
+</html>

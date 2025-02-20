@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Selectores CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 class="titulo-principal">Explora Nuestros Servicios</h1>
+        <nav class="menu-principal">
+            <ul>
+                <li class="nav-item active"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#servicios">Servicios</a></li>
+                <li class="nav-item seleccionado"><a href="#blog">Blog</a></li>
+                <li class="nav-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonios">
+        <h2>Lo que Dicen Nuestros Clientes</h2>
+        <p class="intro">Texto introductorio sobre nuestros clientes.</p>
+        <blockquote class="highlight">"Excelente servicio y atención al cliente."</blockquote>
+    </section>
+
+    <!-- Galería de Productos -->
+    <section class="galeria">
+        <h2>Galería de Productos</h2>
+        <div class="grid-imagenes">
+            <div class="imagen-item destacado">Producto 1</div>
+            <div class="imagen-item">Producto 2</div>
+            <div class="imagen-item">Producto 3</div>
+            <div class="imagen-item destacado">Producto 4</div>
+        </div>
+    </section>
+
+    <!-- Sidebar con Lista de Categorías -->
+    <aside class="barra-lateral">
+        <ul class="lista-categorias">
+            <li class="separador">Categorías</li>
+            <li class="categoria-item">Moda</li>
+            <li class="categoria-item seleccionado">Hogar</li>
+            <li class="categoria-item">Tecnología</li>
+            <li class="categoria-item">Deportes</li>
+        </ul>
+    </aside>
+
+    <!-- Pie de Página con Formulario de Contacto -->
+    <footer id="pie">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>

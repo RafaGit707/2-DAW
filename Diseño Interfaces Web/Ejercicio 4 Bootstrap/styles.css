@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fila1 { background-color: green; color: white; }
+.fila2 { background-color: red; color: white; }
+.subfila { background-color: purple; color: white; }
+.subfila-col { background-color: orange; }
+.fila3 { background-color: blue; color: white; }

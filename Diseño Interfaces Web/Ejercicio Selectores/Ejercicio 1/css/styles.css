@@ -1,0 +1,9 @@
+#titulo {
+    color: blue;
+}
+.texto-grande {
+    font-size: 20px;
+}
+* {
+    background-color: lightgrey;
+}

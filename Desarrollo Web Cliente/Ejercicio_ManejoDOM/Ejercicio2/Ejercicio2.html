@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2 : Encuesta de Preferencias</title>
+    <meta charset="UTF-8">
+    <script src="../Ejercicio2/Ejercicio2.js"></script>
+</head>
+<body>
+
+    <h2>Encuesta de Preferencias</h2>
+    <form id="encuesta">
+        <label>Tipo de Comida:</label><br>
+        <input type="radio" name="comida" value="Vegetariana"> Vegetariana<br>
+        <input type="radio" name="comida" value="Vegana"> Vegana<br>
+        <input type="radio" name="comida" value="Omnívora"> Omnívora<br>
+        <br>
+        <label>Deportes Favoritos:</label><br>
+        <input type="checkbox" name="deporte" value="Fútbol"> Fútbol<br>
+        <input type="checkbox" name="deporte" value="Baloncesto"> Baloncesto<br>
+        <input type="checkbox" name="deporte" value="Tenis"> Tenis<br>
+        <input type="checkbox" name="deporte" value="Ciclismo"> Ciclismo<br>
+        <input type="checkbox" name="deporte" value="Natación"> Natación<br>
+        <br>
+        <input type="button" value="Mostrar Preferencias" onclick="mostrarPreferencias()">
+        <p id="resultado"></p>
+    </form>
+
+</body>
+</html>

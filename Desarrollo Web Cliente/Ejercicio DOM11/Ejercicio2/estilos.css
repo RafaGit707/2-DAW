@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 16px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 2px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+li {
+    padding: 4px;
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+}

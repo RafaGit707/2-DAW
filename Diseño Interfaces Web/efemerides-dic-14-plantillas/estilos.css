@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hwb(54 50% 0%);
+    padding: 10px;
+}
+
+.container {
+    display: block;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.periodo {
+    overflow: auto;
+    margin: 10px 10px 20px;
+    border:  hwb(43 20% 0%) 5px solid;
+    border-top: none;
+    background-color: hwb(54 20% 0%);
+}
+
+h2 {
+    margin: 0;
+    background-color: hwb(43 20% 0%);
+}
+
+.evento {
+    border: hwb(28 0% 0%) 5px solid;
+    border-top: none;
+    background-color: hwb(49 20% 0%);
+    float: left;
+    width: 40%;
+    margin: 10px 4%;
+}
+
+.fecha {
+    margin: 0;
+    padding-left: 5px;
+    background-color: hwb(28 0% 0%);
+    color: white;
+}
+
+p {
+    margin: 5px;
+}
+
+footer {
+    margin: 10px 0;
+}

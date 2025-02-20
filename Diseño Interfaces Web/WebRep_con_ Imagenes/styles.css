@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2b6daf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 16px;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.article {
+    width: 300px;
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.article img {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.article h2 {
+    font-size: 1.1rem;
+    color: #2b6daf;
+    margin-top: 10px;
+}
+
+.article p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #2b6daf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer .wikipedia {
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .articles {
+        flex-direction: column;
+    }
+
+    .article {
+        margin-bottom: 20px;
+    }
+}

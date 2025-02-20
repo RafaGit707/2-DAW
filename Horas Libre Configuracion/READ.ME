@@ -1,0 +1,61 @@
+# Audi-RS
+
+Página Web para Visualizar Coches Audi RS
+
+Una aplicación diseñada para los entusiastas de los coches Audi RS. Este sistema permite explorar diferentes modelos, ver detalles y obtener información relevante de cada vehículo.
+
+Funcionalidades Principales
+
+Exploración de Modelos:
+
+  Visualizar una lista completa de modelos Audi RS.
+
+  Filtrar por año, potencia, o precio.
+
+Información Detallada:
+
+  Mostrar especificaciones técnicas, imágenes y precios de cada coche.
+
+Interfaz Intuitiva:
+
+  Diseño moderno y responsivo para una experiencia de usuario óptima.
+
+Tecnologías Utilizadas
+
+  PHP
+  
+  MySQL
+  
+  HTML y CSS
+  
+  JavaScript
+
+Enlace al Proyecto https://github.com/RafaGit707/Audi-RS
+
+
+
+
+
+Ejemplo de Código
+
+<?php
+
+$conn = new mysqli("localhost", "usuario", "contraseña", "audi_rs_db");
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM coches";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo "<h3>" . $row["modelo"] . "</h3><p>Precio: $" . $row["precio"] . "</p>";
+    }
+} else {
+    echo "No se encontraron coches.";
+}
+$conn->close();
+?>
+
+Con este proyecto, esperamos ofrecer una herramienta completa para los amantes de los coches Audi RS.

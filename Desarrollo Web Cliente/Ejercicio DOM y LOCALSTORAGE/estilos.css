@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 16px;
+}
+
+div {
+    margin-bottom: 16px;
+}
+
+li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 6px;
+}

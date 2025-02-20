@@ -1,0 +1,20 @@
+img[title="Flor"] {
+    border: 2px solid red;
+}
+
+
+img[title*="Flor"] {
+    filter: brightness(1.5);
+}
+
+img[alt^="Flor"] {
+    width: 200px;
+}
+
+img[alt$="grande"] {
+    opacity: 0.5;
+}
+
+img {
+    width: 300px;
+}

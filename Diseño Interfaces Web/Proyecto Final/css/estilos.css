@@ -1,0 +1,1063 @@
+/* PROYECTO REALIZADO POR RAFAEL GALVÁN CALVO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MEDIA */
+
+.img-coche {
+    width: 100%;
+    height: fit-content;
+}
+
+.img-logo {
+    width: auto;
+    height: 30px;
+}
+
+.img-logo-footer {
+    width: auto;
+    height: 80px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.video-coche {
+    width: 100%;
+    height: fit-content;
+}
+
+.video-item {
+    position: relative;
+    width: 100%;
+}
+
+/* NAV HEADER */
+
+.logo {
+    padding: 14px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    color: black;
+}
+
+header nav ul li a {
+   color: black;
+   font-size: large;
+}
+
+header nav ul li a:hover {
+    color: #555555;
+ }
+
+
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-color: #828788;
+}
+
+.featured article {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 40px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+}
+
+.intro p {
+    color: black;
+    font-size: 18px;
+}
+
+.intro form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.intro form label {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: black;
+ }
+
+.intro form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+.intro form button {
+    padding: 14px 20px 14px 20px;
+    background: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    border: 2px solid black;
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* CARROUSEL */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carrusel-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carrusel-texto {
+    width: 30%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.texto-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.texto-slide {
+    height: 100vh;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideText 20s infinite;
+}
+
+.carrusel-imagenes {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    animation: slideImages 20s infinite;
+}
+
+.imagen-slide {
+    flex: 0 0 100vh;
+    overflow: hidden;
+}
+
+.imagen-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@keyframes slideText {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-100%); }
+    50%, 70% { transform: translateY(-200%); }
+    75%, 95% { transform: translateY(-300%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes slideImages {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-100%); }
+    50%, 70% { transform: translateY(-200%); }
+    75%, 95% { transform: translateY(-300%); }
+    100% { transform: translateY(0); }
+}
+
+/* PARALLAX */
+
+:root {
+    --scroll-y: 0;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    background-image: url("../img/audi-x2.jpg");
+    background-size: cover;
+    background-position: center calc(100% + var(--scroll-y) * 0.6px);
+}
+
+.parallax-text {
+    position: sticky;
+    top: 30vh;
+    background: white;
+    color: black;
+    margin: 60px;
+    padding: 60px 100px 60px 100px;   
+    text-align: left;
+    max-width: 700px;
+    font-size: 1.4rem;
+}
+
+.parallax-text h2 {
+    margin-bottom: 24px;
+}
+
+/* TECNOLOGIA 1 */    
+
+.tecnologia1, .tecnologia2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    overflow: hidden;
+}
+
+.img-tecnologia1, .img-tecnologia2 {
+    width: 70%;
+    height: auto;
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img-tecnologia1 {
+    background-image: url("../img/audi-rs7-1.jpg");
+    background-position: center left;
+}
+
+.img-tecnologia2 {
+    background-image: url("../img/audi-rs4-interior.jpg");
+    background-position: center right;
+}
+
+.article-tecnologia1, .article-tecnologia2 {
+    width: 30%;
+    padding: 50px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+    color: black;
+    font-size: 1.4em;
+}
+
+.article-tecnologia1 h2, .article-tecnologia2 h2 {
+    margin-bottom: 24px;
+}
+
+.tecnologia2 {
+    margin-top: 60px;
+    flex-direction: row;
+}
+
+/* TECNOLOGÍA 2 */
+
+.tecnologia {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 4.5s;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("../img/audi-rs7-2.webp");
+    background-size: cover;
+    background-position: center calc(100% + var(--scroll-y) * 0.7px);
+}
+
+.tecnologia22 {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 4.5s;
+
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("../img/audi-rs5.webp");
+    background-size: cover;
+    background-position: center calc(100% + var(--scroll-y) * 0.9px);
+}
+
+.tecnologia-text {
+    position: sticky;
+    top: 30vh;
+    background: white;
+    color: black;
+    padding: 50px 80px 50px 80px;
+    margin: 50px;
+    text-align: left;
+    max-width: 500px;
+    font-size: 1.4rem;
+}
+
+.tecnologia-text h2 {
+    margin-bottom: 24px;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.tecnologia:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.tecnologia:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.tecnologia:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.tecnologia:nth-of-type(4) {
+    animation-delay: 1.4s;
+}
+
+.tecnologia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tecnologia-content h2 {
+    margin-bottom: 30px;
+}
+
+.tecnologia-content img {
+    width: 100%;
+    height: auto;
+}
+
+.tecnologia-content p {
+    font-size: 18px;
+    color: black;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* CURIOSIDADES */
+
+.curiosidades {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    background-color: white;
+    color: black;
+}
+
+.curiosidades-text {
+    width: 35%;
+    background: white;
+    color: black;
+    padding: 0 40px 0 40px;
+    margin: 50px;
+    text-align: left;
+    max-width: 700px;
+    font-size: 1.4rem;
+}
+
+.curiosidades-text h2 {
+    margin-bottom: 20px;
+}
+
+.img-curiosidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-curiosidades img {
+    width: 100%;
+    height: auto;
+}
+
+.curiosidades-text h2 {
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    background-color: black;
+    align-items: center;
+    color: white;
+    max-width: 65%;
+}
+
+.footer-links ul li a:hover {
+    color: #808080;
+}
+
+.social-media {
+    align-items: center;
+    list-style: none;
+    max-width: 30%;
+}
+
+.footer-links ul {
+    display: inline-flex;
+    flex-flow: wrap;
+    list-style: none;
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+}
+
+footer {
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.arriba {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+svg {
+    transform: rotate(180deg);
+}
+
+.arriba a span {
+    margin-right: 10px;
+}
+
+.arriba a {
+    display: inline-flex;
+    height: fit-content;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.arriba a:hover {
+    color: #808080;
+}
+
+.tag {
+    border-top: 1px solid #333333;
+    margin-top: 40px;
+}
+
+.tag p {
+    margin-top: 40px;
+    font-size: small;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-img {
+    width: auto;
+    height: 24px;
+}
+
+/* Media Queries */
+
+/* Para pantallas menores a 1024px (tablets y móviles grandes) */
+@media (max-width: 1024px) {
+
+    .carrusel-container {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .carrusel-texto {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .texto-wrapper {
+        width: 100vh;
+        height: 30vh;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        width: max-content;
+    }
+
+    .texto-slide {
+        width: 100%;
+        height: 100%;
+        font-size: 1.6em;
+        min-width: 100vw;
+    }
+
+    .carrusel-imagenes {
+        width: 100%;
+        height: 70vh;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .imagen-slide {
+        flex: 0 0 100vw;
+    }
+
+    .imagen-slide img {
+        height: 70vh;
+    }
+
+    @keyframes slideText {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-100vw); }
+        50%, 70% { transform: translateX(-200vw); }
+        75%, 95% { transform: translateX(-300vw); }
+        100% { transform: translateX(0); }
+    }
+    
+    @keyframes slideImages {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-100vw); }
+        50%, 70% { transform: translateX(-200vw); }
+        75%, 95% { transform: translateX(-300vw); }
+        100% { transform: translateX(0); }
+    }
+
+    .parallax-container {
+        max-width: 100vw;
+        align-items: center;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.5px);
+    }
+
+    .parallax-text {
+        font-size: 1.3em;
+        padding: 50px;
+        margin: 40px;
+    }
+
+    .tecnologia1, .tecnologia2 {
+        width: 100%;
+        min-height: 50vh;
+        flex-direction: column;
+    }
+
+    .tecnologia1 {
+        width: 100%;
+        min-height: 50vh;
+        flex-direction: column-reverse;
+    }
+
+    .img-tecnologia1 {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        background-position: center left calc(-200px);
+    }
+
+    .img-tecnologia2 {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        background-position: center right calc(-300px);
+    }
+
+    .article-tecnologia1, .article-tecnologia2 {
+        width: 100%;
+        padding: 60px;
+        text-align: left;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 1.2em;
+    }
+
+    .tecnologia {
+        background-size: cover;
+        background-position: center calc(100% + var(--scroll-y) * 0.65px);
+    }
+    
+    .tecnologia22 {
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.6px);
+    }
+    
+    .tecnologia-text {
+        padding: 30px 40px 30px 40px;
+        margin: 30px;
+        max-width: 400px;
+        font-size: 1.1em;
+    }
+    
+    .curiosidades {
+        min-width: 100%;
+        min-height: 50vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curiosidades-text {
+        width: 80%;
+        margin: 60px 80px 60px 80px;
+        font-size: 1.2em;
+    }
+    
+}
+
+/* Para pantallas menores a 768px (móviles) */
+@media (max-width: 768px) {
+
+    .overlay h1 {
+        font-size: 20px;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .texto-slide {
+        font-size: 1.2em;
+    }
+
+    .parallax-text {
+        font-size: 1.1em;
+        padding: 40px;
+        margin: 30px;
+    }
+
+    .article-tecnologia1, .article-tecnologia2 {
+        width: 100%;
+        padding: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 1.1em;
+    }
+
+    .img-tecnologia1 {
+        background-position: center left calc(-200px);
+    }
+    
+    .img-tecnologia2 {
+        background-position: center;
+    }
+
+    .tecnologia {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        flex-direction: column;
+        height: max-content;
+        background-size: cover;
+        background-position: center calc(30% + var(--scroll-y) * 0.8px);
+    }
+    
+    .tecnologia22 {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.9px);
+    }
+
+    .tecnologia > .tecnologia-text {
+        top: 30vh;
+        margin: 40px;
+        margin-bottom: 100%;
+    }
+
+    .tecnologia-text {
+        padding: 40px 40px 40px 40px;
+        margin: 40px;
+        max-width: max-content;
+        font-size: 1em;
+    }
+
+    .curiosidades {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .curiosidades-text {
+        width: 100%;
+        font-size: 1em;
+    }
+
+}
+
+/* Para pantallas muy pequeñas (menores a 480px) */
+@media (max-width: 480px) {
+    .carrusel-texto {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .intro form button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .texto-slide {
+        font-size: 1.2em;
+    }
+
+    .parallax-text {
+        font-size: 1.1em;
+        padding: 40px;
+        margin: 30px;
+    }
+
+    .article-tecnologia1, .article-tecnologia2 {
+        width: 100%;
+        padding: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 1.1em;
+    }
+
+    .img-tecnologia1 {
+        background-position: center left calc(-200px);
+    }
+    
+    .img-tecnologia2 {
+        background-position: center;
+    }
+
+    .tecnologia {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        flex-direction: column;
+        height: max-content;
+        background-size: cover;
+        background-position: center calc(30% + var(--scroll-y) * 0.6px);
+    }
+    
+    .tecnologia22 {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position: center calc(100% + var(--scroll-y) * 0.4px);
+    }
+
+    .tecnologia > .tecnologia-text {
+        margin: 0;
+        margin-top: 100%;
+    }
+
+    .tecnologia-text {
+        padding: 40px 40px 40px 40px;
+        margin: 40px;
+        max-width: max-content;
+        font-size: 1em;
+    }
+}
+
+/* PAGINA BLOG.HTML */
+
+/* BLOG */
+
+.main-blog {
+    background-color: #f8f8f8;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 40px;
+    margin: auto;
+}
+
+.article {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #002fff;
+    text-decoration: none;
+}
+
+.img-blog {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-destacado {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.content {
+    padding: 24px;
+}
+
+.content h2 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.content p {
+    color: #333333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.article a:hover {
+    color: #0099ff;
+}
+
+/* MEDIA QUERY BLOG */
+
+@media (max-width: 1024px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* PAGINA CONCESIONARIO.HTML */
+
+/* CONCESIONARIO */
+
+.coches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
+    gap: 20px;
+    padding: 60px;
+    max-width: 100%;
+    background-color: #f3f3f3;
+}
+
+.coche-card {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 16px;
+}
+
+.coche-card:hover {
+    transform: translateY(-5px);
+}
+
+.coche-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.coche-info {
+    padding: 10px;
+}
+
+.coche-info h2 {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+.coche-info p {
+    font-size: 1.1rem;
+    color: black;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .coches-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        padding: 40px;
+    }
+    .coche-card img {
+        width: 100%;
+        height: auto;
+    }
+    .coche-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .coche-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .coches-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 20px;
+    }
+    .coche-card img {
+        width: 100%;
+        height: auto;
+    }
+    .coche-info h2 {
+        font-size: 1.4rem;
+    }
+}

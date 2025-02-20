@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+div {
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+input {
+    padding: 4px;
+}
+
+button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+}

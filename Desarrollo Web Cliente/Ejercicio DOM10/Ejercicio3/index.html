@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Tabla Dinámica</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+    <form id="usuarioForm">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="number" id="edad" placeholder="Edad" required>
+        <button type="submit">Añadir Usuario</button>
+    </form>
+    <button id="copiarListaBtn" onclick="copiarLista()">Copiar Lista</button>
+    <input type="number" id="edadEliminar" placeholder="Edad para eliminar">
+    <button id="eliminarPorEdadBtn" onclick="eliminarPorEdad()">Eliminar por Edad</button>
+
+    <h2>Lista Original</h2>
+    <ul id="listaUsuarios"></ul>
+    
+    <h2>Lista Copiada</h2>
+    <ul id="listaCopiada"></ul>
+</body>
+</html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333333;
+    padding: 16px;
+}
+
+header h1 {
+    padding: 16px;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 12px;
+}
+
+form textarea {
+    padding: 5px;
+    min-height: 80px;
+    width: min-content;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 5px;
+    width: min-content;
+    margin-top: 10px;
+}
+
+form button {
+    max-width: min-content;
+    padding: 10px 18px 10px 18px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 12px;
+    padding: 20px;
+}
+
+/* Cambia el color del título principal (<h1>) en el encabezado a azul al pasar el cursor sobre él y añade un efecto de sombra. */
+header .titulo-principal:hover {
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Selecciona el segundo <li> en la lista del menú principal y cambia su color de fondo a verde. */
+.menu-principal li:nth-child(2) {
+    background-color: green;
+}
+
+/* Aplica un color de fondo rojo a los elementos de galería (.imagen-item) solo cuando se pasa el cursor sobre ellos y tengan la clase destacado. */
+.galeria .imagen-item.destacado:hover {
+    background-color: red;
+}
+
+/* Cambia el color de los enlaces en el menú principal a blanco cuando el elemento padre <li> tiene la clase active y el enlace está en estado hover. */
+.menu-principal .nav-item.active a:hover {
+    color: white;
+}
+
+/* Cambia el color de fondo del formulario en el pie de página al hacer hover, y añade un borde sombreado. */
+footer form:hover {
+    background-color: lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Selecciona todos los elementos <input> de tipo text y email y añade un borde azul de 2 píxeles y sombra al recibir el foco. */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px blue;
+}
+
+/* Aplica un color de fondo gris a los botones en el formulario del pie de página cuando se hace hover sobre el botón de envío. */
+footer form button[type="submit"]:hover {
+    background-color: gray;
+}
+
+/* Selecciona el segundo párrafo dentro de cada <section> que sigue inmediatamente a un <h2> y cambia el color de su texto a marrón. */
+section > h2 + p {
+    color: brown;
+}
+
+/* Cambia el color del texto de todos los enlaces en el menú principal a azul cuando el enlace es hijo de un <li> con la clase seleccionado. */
+.menu-principal .nav-item.seleccionado a {
+    color: blue;
+}
+
+/* Cambia el color de fondo de todos los elementos <p> que son hermanos de un <blockquote> dentro de la sección de testimonios. */
+.testimonios blockquote ~ p {
+    background-color: lightgray;
+}
+
+/* Selecciona el tercer <input> en el formulario de contacto y añade un borde negro de 1 píxel y fondo amarillo al recibir el foco. */
+footer form input:nth-of-type(3):focus {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/* Cambia el color del texto de todos los elementos <h2> solo si su elemento padre es una <section>. */
+section > h2 {
+    color: darkblue;
+}
+
+/* Selecciona todos los <li> en el sidebar que siguen a un elemento con la clase seleccionado y cambia su color de fondo a naranja. */
+.barra-lateral .categoria-item.seleccionado + .categoria-item {
+    background-color: orange;
+}
+
+/* Cambia el color de fondo de un <button> que sigue inmediatamente a un <input> de tipo text dentro del formulario de contacto. */
+footer form input[type="text"] + button {
+    background-color: lightblue;
+}
+
+/* Cambia el color de fondo de los elementos <p> que son hermanos de un <h2> en todas las secciones. */
+section > h2 ~ p {
+    background-color: lightyellow;
+}
+
+/* Aplica un borde a todos los <input> que son hermanos de un <textarea> dentro del formulario de contacto. */
+footer form textarea ~ input {
+    border: 1px solid gray;
+}
+
+/* Cambia el color de fondo del botón de envío en el formulario de contacto a azul claro al hacer hover. */
+footer form button[type="submit"]:hover {
+    background-color: lightblue;
+}
+
+/* Selecciona el primer elemento <li> dentro de .lista-categorias que sigue a un elemento con la clase separador y cambia su color a verde. */
+.lista-categorias .separador + .categoria-item {
+    color: green;
+}
+
+/* Cambia el color de fondo del <h2> en el pie de página al hacer hover. */
+footer > h2:hover {
+    background-color: lightgray;
+}
+
+/* Selecciona los elementos <div> que son hijos directos de .grid-imagenes y añade un padding de 15px. */
+.grid-imagenes > div {
+    padding: 15px;
+}
+
+/* Cambia el color de texto de todos los <div> que son precedidos por un párrafo <p> en cada <section>. */
+section > p + div {
+    color: darkgreen;
+}
+
+/* Cambia el color de fondo del primer párrafo (<p>) en la sección de testimonios solo si precede a un <blockquote>. */
+.testimonios p:first-of-type + blockquote {
+    background-color: beige;
+}
+
+/* Cambia el estilo de los elementos <li> que son precedidos por un elemento con la clase separador en la lista de categorías. */
+.lista-categorias .separador + .categoria-item {
+    font-style: italic;
+}
+
+/* Cambia el color del texto de todos los elementos <h2> que son precedidos por un párrafo con la clase intro. */
+.intro + h2 {
+    color: purple;
+}
+
+/* Aplica un fondo gris claro a los elementos <p> en la sección de testimonios que son hermanos de un <blockquote>. */
+.testimonios blockquote ~ p {
+    background-color: lightgray;
+}

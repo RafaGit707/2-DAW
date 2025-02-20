@@ -1,0 +1,15 @@
+div > p {
+    background-color: yellow;
+}
+
+h2 + p {
+    color: purple;
+}
+
+div p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+h2 ~ p {
+    font-style: italic;
+}

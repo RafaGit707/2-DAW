@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio13 : Select</title>
+    <script src="Ejercicio3.js" defer></script>
+</head>
+<body>
+    <label>Pizza:</label>
+    <select id="pizzaSelect">
+        <option value="4">Queso - $4</option>
+        <option value="6">Jamón y Queso - $6</option>
+        <option value="10">Especial - $10</option>
+    </select>
+    <br>
+    <label>Cantidad:</label>
+    <input type="number" id="cantidadPizza" min="1" value="1">
+    <br>
+    <button onclick="calcularTotal()">Calcular</button>
+    <br>
+    <label>Total a pagar: </label>
+    <input type="text" id="importeTotal" readonly>
+</body>
+</html>
